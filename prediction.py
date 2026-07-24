@@ -9,6 +9,7 @@ model = joblib.load("models/svm_model.pkl")
 
 logger.info("Scaler and model loaded successfully")
 
+
 def predict_loan(data):
 
     logger.info(f"Received Input: {data}")
@@ -23,10 +24,10 @@ def predict_loan(data):
 
     probability = model.predict_proba(
         scaled_data
-    )[0][1]
+    )[0][0]
 
     logger.info(
-        f"Prediction={prediction[0]}, Probability={probability:.2%}"
+        f"Prediction={prediction[0]}, Approval Probability={probability:.2%}"
     )
 
     return prediction[0], probability

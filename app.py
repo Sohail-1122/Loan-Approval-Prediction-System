@@ -478,20 +478,17 @@ if predict_btn:
         )
 
     # ==========================================
-    # RESULT
-    # ==========================================
+# RESULT
+# ==========================================
 
     st.markdown("---")
 
-    # Since:
-    # Approved = 0
-    # Rejected = 1
-
-    approval_probability = 1 - probability
-    rejection_probability = probability
-
+    
+    approval_probability = probability
+    rejection_probability = 1 - probability
+    
     if prediction == 0:
-
+    
         st.markdown(
             f"""
             <div style="
@@ -502,23 +499,23 @@ if predict_btn:
             text-align:center;
             box-shadow:0px 4px 15px rgba(0,0,0,0.3);
             ">
-
+    
             <h2>✅ LOAN APPROVED</h2>
-
+    
             <h3>Approval Probability: {approval_probability:.2%}</h3>
-
+    
             <p>
             Congratulations! The applicant meets the eligibility criteria
             for loan approval.
             </p>
-
+    
             </div>
             """,
             unsafe_allow_html=True
         )
-
+    
     else:
-
+    
         st.markdown(
             f"""
             <div style="
@@ -529,21 +526,21 @@ if predict_btn:
             text-align:center;
             box-shadow:0px 4px 15px rgba(0,0,0,0.3);
             ">
-
+    
             <h2>❌ LOAN REJECTED</h2>
-
+    
             <h3>Rejection Probability: {rejection_probability:.2%}</h3>
-
+    
             <p>
             The applicant does not currently satisfy the
             required approval criteria.
             </p>
-
+    
             </div>
             """,
             unsafe_allow_html=True
         )
-
+    
     logger.info(
         f"Prediction={prediction}, "
         f"Approval={approval_probability:.2%}, "
