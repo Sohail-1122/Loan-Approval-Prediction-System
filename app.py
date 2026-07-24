@@ -277,7 +277,7 @@ with col1:
 with col2:
 
     loan_term = st.number_input(
-        "Loan Term (Months)",
+        "Loan Term (Years)",
         min_value=1,
         max_value=20,
         value=2
