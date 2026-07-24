@@ -1,3 +1,6 @@
+https://loan-prediction1122.streamlit.app/
+
+
 # 🏦 Loan Approval Prediction System
 
 An AI-powered Loan Approval Prediction Web Application built using Machine Learning and Streamlit.
