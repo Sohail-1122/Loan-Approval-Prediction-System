@@ -279,8 +279,8 @@ with col2:
     loan_term = st.number_input(
         "Loan Term (Months)",
         min_value=1,
-        max_value=360,
-        value=120
+        max_value=20,
+        value=2
     )
 
     cibil_score = st.number_input(
