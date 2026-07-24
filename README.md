@@ -163,6 +163,18 @@ This project demonstrates:
 
 ---
 
+## 🔮 Future Plans
+
+- Improve model accuracy using advanced algorithms.
+- Add more financial features for better predictions.
+- Build a recommendation system for loan applicants.
+- Store user prediction history.
+- Enhance dashboard UI/UX.
+- Deploy with a custom domain.
+- Add real-time data integration.
+
+---
+
 ## 👨‍💻 Author
 
 **Md Sohail Ansari**
