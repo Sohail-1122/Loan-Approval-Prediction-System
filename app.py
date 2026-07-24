@@ -244,6 +244,7 @@ with col1:
     no_of_dependents = st.number_input(
         "Number of Dependents",
         min_value=0,
+        max_value=10,
         value=0
     )
 
@@ -258,20 +259,28 @@ with col1:
     )
 
     income_annum = st.number_input(
-        "Annual Income",
-        min_value=0
+        "Annual Income (₹)",
+        min_value=50000,
+        max_value=10000000,
+        value=500000,
+        step=10000
     )
 
     loan_amount = st.number_input(
-        "Loan Amount",
-        min_value=0
+        "Loan Amount (₹)",
+        min_value=10000,
+        max_value=50000000,
+        value=1000000,
+        step=10000
     )
 
 with col2:
 
     loan_term = st.number_input(
-        "Loan Term",
-        min_value=0
+        "Loan Term (Months)",
+        min_value=1,
+        max_value=360,
+        value=120
     )
 
     cibil_score = st.number_input(
@@ -282,23 +291,35 @@ with col2:
     )
 
     residential_assets_value = st.number_input(
-        "Residential Assets Value",
-        min_value=0
+        "Residential Assets Value (₹)",
+        min_value=0,
+        max_value=100000000,
+        value=500000,
+        step=10000
     )
 
     commercial_assets_value = st.number_input(
-        "Commercial Assets Value",
-        min_value=0
+        "Commercial Assets Value (₹)",
+        min_value=0,
+        max_value=100000000,
+        value=250000,
+        step=10000
     )
 
     luxury_assets_value = st.number_input(
-        "Luxury Assets Value",
-        min_value=0
+        "Luxury Assets Value (₹)",
+        min_value=0,
+        max_value=50000000,
+        value=100000,
+        step=10000
     )
 
     bank_assets_value = st.number_input(
-        "Bank Assets Value",
-        min_value=0
+        "Bank Assets Value (₹)",
+        min_value=0,
+        max_value=50000000,
+        value=200000,
+        step=10000
     )
 
 # =====================================================
